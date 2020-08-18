@@ -30,6 +30,10 @@ index.html file, the refreshed page does not produce any filtered data in the ta
 ------------------------------------------------------------------------------------------------
 These are the links to my app.js and html files:
 https://github.com/GR8505/UFOs/blob/master/static/js/app.js
+https://github.com/GR8505/UFOs/blob/master/index.html
+
+As mentioned earlier the web page opens as intended but no information is provided in the table.
+
 
 
 
