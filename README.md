@@ -33,6 +33,7 @@ https://github.com/GR8505/UFOs/blob/master/static/js/app.js
 https://github.com/GR8505/UFOs/blob/master/index.html
 
 As mentioned earlier the web page opens as intended but no information is provided in the table.
+![](https://github.com/GR8505/UFOs/blob/master/static/images/Webpage.png)
 
 
 
