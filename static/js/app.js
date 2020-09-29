@@ -1,15 +1,10 @@
-// import the data from data.js
 const tableData = data;
 
-// Reference the HTML table using d3
 var tbody = d3.select("tbody");
 
-// Build table
 function buildTable(data) {
     tbody.html("");
 
-
-    // Adding loop
     data.forEach((dataRow) => {
         let row = tbody.append("tr");
         Object.values(dataRow).forEach((val) => {
@@ -19,22 +14,36 @@ function buildTable(data) {
     });
 }
 
-// Adding filters with D3
 function handleClick() {
     let date = d3.select("#datetime").property("value");
+    let city = d3.select("#city").property("value");
+    let state = d3.select("#state").property("value");
+    let country= d3.select("#country").property("value");
+    let shape = d3.select("#shape").property("value");
     let filteredData = tableData;
 
-
-    // Creating if statement
     if (date) {
         filteredData = filteredData.filter(row => row.datetime === date);
     }
 
+    if (city) {
+        filteredData = filteredData.filter(row => row.city === city);
+    }
+
+    if (state) {
+        filteredData = filteredData.filter(row => row.state === state);
+    }
+
+    if (country) {
+        filteredData = filteredData.filter(row => row.country === country);
+    }
+
+    if (shape) {
+        filteredData = filteredData.filter(row => row.shape === shape);
+    }
+
     buildTable(filteredData);
 }
+d3.selectAll("#filter-btn").on("click", handleClick);
 
-// Attach an event to listen for the form button
-d3.selectAll("#filter-btn").on("click", handleClick);    
-
-// Rebuild the table using the filtered data
 buildTable(tableData);
