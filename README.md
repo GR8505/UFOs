@@ -33,9 +33,7 @@ project issues.
 ------------------------------------------------------------------------------------------------
 ## Debugging Issues ##
 ------------------------------------------------------------------------------------------------
-These are the links to my app.js and html files:
-https://github.com/GR8505/UFOs/blob/master/static/js/app.js
-https://github.com/GR8505/UFOs/blob/master/index.html
+These are the links to my [app.js](https://github.com/GR8505/UFOs/blob/master/static/js/app.js) and [html](https://github.com/GR8505/UFOs/blob/master/index.html) files:
 
 As mentioned earlier the web page opens as intended but no information is provided in the table.
 ![](https://github.com/GR8505/UFOs/blob/master/static/images/Webpage.png)
